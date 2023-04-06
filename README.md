@@ -1,5 +1,10 @@
 # git-secret-test
 
+## Prerequisites
+
+- Installed `git-crypt`
+  e.g. via homebrew (`brew install git-crypt`) or nix (`nix-env -iA nixpkgs.git-crypt`).
+
 ## workflow
 
 ### Setup encryption once for the repo
@@ -27,8 +32,8 @@ Adding collaborators to the repo can be done in two ways:
 
 For testing purposes the keyfile is stored in the repo (`./secret_key_for_test/exported_secret_key`). Of course you should never do this in a real project.
 
-
 ## Further reading
 
 - [git-crypt](https://github.com/AGWA/git-crypt)
 - <https://www.guyrking.com/2018/09/22/encrypt-files-with-git-crypt.html>
+- <https://dev.to/heroku/how-to-manage-your-secrets-with-git-crypt-56ih>
